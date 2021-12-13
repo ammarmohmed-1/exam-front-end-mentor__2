@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+body{
+    font-family: 'Overpass', sans-serif;
+    position: relative;
+    max-width: 1440px;
+    max-height:3900px;
+    margin: auto;
+}
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+:root{
+    --neutral-white: hsl(0, 0%, 100%);
+    --wheat-dark:rgba(248, 239, 239, 0.87);
+    --font-bold:4rem;
+    --font-family:
+    
+}
+/* normal style */
+p{font-family: 'Ubuntu', sans-serif;}
+a{text-decoration: none;}
+li{list-style:none;}
+ul{list-style: none;}
+button{border: none;}
+.p_5{padding-left: 5px;}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Style The Header @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#toggle{
+    display: none;
+    margin: 30px 100px 0px 0px;
+    cursor: pointer;
+    float: right;
+    font-size: 2rem;
+}
+.logo_intro{
+    position: absolute;
+    left: 110px;
+    top: 20px;
+}
+header{
+    background-color: #fe846d;
+    background-image: url("images/bg-pattern-intro.svg");
+    border-bottom-left-radius:96px;
+    background-repeat: no-repeat ;
+    background-size:cover;
+    background-position: 400px;
+    max-width:1440px;
+    height:605px;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Style The Navghtion Menue @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+nav{
+    display:block;
+    position:absolute;
+    left:165px;
+    top: 65px;
+    text-transform: capitalize;
+}
+nav .First_List{
+    color:var(--wheat-dark);
+    display:flex;
+    margin:-23px 70px;
+}
+nav .First_List > li{
+    position: relative;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+/* Start style the up list */
+.UP__List{
+    cursor: pointer;
+    background-image: url(images/icon-arrow-light.svg);
+    background-repeat: no-repeat;
+    background-position:83% 8px;
+    height: 2rem;
+}
+.UP__List:hover{
+    color:var(--neutral-white);
+    text-decoration:underline var(--neutral-white) 2px;
+}
+.UL_UP_List{
+    position: relative;
+    right: 40px;
+    display: none;
+    background-color: var(--neutral-white);
+    box-shadow: 1px 1px 10px 1px gray;
+    border-radius: 7px;
+    width: 373px;
+    height: 150px;
+    margin:40px -90px;
+}
+/* End style the up list */
+
+/* Start style the son list */
+
+.UL_UP_List li{
+    margin:20px 21px;
+}
+.UL_UP_List li a{
+    color: black;
+    font-weight: 400;
+}
+.UL_UP_List li a:hover{
+    color: none;
+    font-weight: 800;
+}
+/* End style the up list */
+
+/*@@@@@@@@@@ style the button UP__list @@@@@@@@@@*/
+
+.Up_button{
+    position: relative;
+    display: grid;
+    grid-template-columns: 6fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr ;
+}
+.login {
+    color: var(--neutral-white);
+    font-size: 1rem;
+    background: none;
+    margin: 6% 70%;
+    display: flex;
+    align-self: center;
+}
+
+.BG-1{
+    background-color:var(--neutral-white);
+    color:#fa8770;
+}
+.BG-1:hover{
+    background-color: rgba(240, 248, 255, 0.423);
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Style The Navghtion Menue @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.intro{
+    position: relative;
+    top:235px;
+}
+.intro h1{
+    font-size:var(--font-bold);
+    color:var(--neutral-white);
+}
+.intro p{
+    font-size: 1rem;
+    color:var(--wheat-dark);
+}
+/* style button */
+.The__buttons{
+    margin:50px 25px;
+    border: none;
+}
+.The__buttons > button{margin-left: 15px;}
+.btn{
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* start style the button one */
+.btn_bg{
+    color:#fa8770;
+}
+.btn_bg:hover{
+    background-color: rgba(245, 229, 229, 0.267);
+    color: var(--neutral-white);
+    transition: all 0.3s;
+}
+/* end style the button one */
+
+/* start style the button two */
+.btn_bgH{
+    background:none;
+    border:solid 2px var(--neutral-white);
+    color: var(--neutral-white);
+
+}
+.btn_bgH:hover{
+    background-color: var(--neutral-white);
+    color:#fa8770;
+    transition: all 0.3s;
+}
+/* end style the button two */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ End Style The Header @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Style The SECTION  ONE @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.section-1{
+    overflow: hidden;
+    position: relative;
+    height: 1112px;
+}
+.tittle{
+    text-align: center;
+    margin:157px 0px;
+    font-size: 2.5rem;
+}
+.img_bg{
+    position:absolute;
+    left: 55%;
+    top: 15%;
+}
+.UP__article{
+    width: 40%;
+    z-index: 2;
+    position:absolute;
+    bottom:12rem;
+    left: 120px;
+}
+.artcle{
+    min-width:119px;
+    max-width: 519px;
+    margin:37px 0px 75px 0px;
+    line-height: 25px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ End Style The SECTION  ONE @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Style The SECTION Two @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#section-2{
+    background-color: hsl(235deg 23% 29%);
+    background-image: url("images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: -210px -450px ;
+    height: 420px;
+    width: 100%;
+    border-radius: 0px 153px 0px 153px;
+    overflow: hidden;
+}
+.tittle__section-2{
+    max-width: 541px;
+    width: 40%;
+    margin-top:133px;
+    line-height: 25px;
+    position: absolute;
+    left: 60%;
+}
+.Bg__section-2{overflow: hidden;}
+
+#section-2 h1{color:var(--neutral-white);}
+
+#section-2 p{
+    color:var(--wheat-dark);
+    margin-top: 26px;
+}
+.img_bloger_one{
+    width: 90%;
+    position: absolute;
+    right:10%;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ End Style The SECTION Two @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Style The SECTION Three @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.section-3{
+    margin-top:295px;
+    height: 1030px;
+}
+.article_laptop{    
+    overflow: hidden;
+    max-width:517px;
+    margin-bottom:85px;
+    
+}
+.article_laptop p{
+    margin-top: 35px;
+}
+.up--article{
+    z-index: 3;
+    position: absolute;
+    right: -130px;
+    margin: 302px 180px 0px 0px;
+    width: 40%;
+}
+.img__section_3{
+    width:800px;
+    height:600px;
+    margin: 110px  0px 78rem -210px;
+    position: absolute;
+    display: block;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ End Style The SECTION Three @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Style The Footer @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+footer{
+    background-color:hsl(240deg 10% 16%);
+    height: 370px;
+    border-top-right-radius: 100px;
+}
+.logo{
+    margin-left: 102px;
+}
+.UP__menuefooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.UP__menuefooter div{
+    margin-top:74px;
+}
+.UP__menuefooter ul{
+    margin-top:30px;
+}
+.UP__menuefooter ul li{
+    margin-top: 20px;
+}
+.UP__menuefooter h3{
+    color: var(--neutral-white);
+}
+.UP__menuefooter ul li a{
+    color: var(--wheat-dark);
+}
+.UP__menuefooter ul li a:hover{
+    text-decoration: underline;
+}
+.attribution{
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.5rem 0px;
+    font-weight: 600;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@ End Style The Footer @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+/**************************** Style The desing responsive **************************/
+
+/*start style in navbarminue & header*/
+@media screen and (max-width:1115px){
+    /* start style the navbar */
+    #toggle{display: block;}
+    .navbar_block{
+        display:block;
+        z-index: 999;
+        position: relative;
+        background-color: white;
+        border: 5px solid green;
+        width:70%;
+        border-radius: 5px;
+        min-height: 25rem;
+        max-height: 180vh;
+        animation: ammar 0.2s;
+        
+    }
+    .navbar_none{display: none;}
+    @keyframes ammar {
+        0%{transform: translate(100vw, 0);}
+        40%{transform: translate(-30vw, 0);}
+        60%{transform: translate(20vw , 0);}
+        60%{transform: translate(-10vw , 0);}
+        100%{transform: translate(0 , 0);}
+    }
+    /* End style the navbar */
+
+    /* start style a responsive up list*/
+    nav .First_List{
+        padding-top: 35px;
+        color:#000;
+        display: block;
+        text-align: center;
+    }
+    .First_List li{margin:35px auto;}
+    /* End style a responsive up list*/
+
+    /* start style a responsive son list*/
+    .UL_UP_List{
+
+        right: 40px;
+        display: none;
+        background-color:rgba(212, 185, 185, 0.911);
+        box-shadow: 1px 1px 10px 1px gray;
+        border-radius: 2px;
+        /*margin:0px 10%;*/
+        margin: auto;
+        max-width:100%;
+    }
+    .UL_UP_List li{
+        margin:20px -21px;
+    }
+
+    .UP__List{
+        cursor: pointer;
+        background-image: url(images/icon-arrow-dark.svg);
+        background-repeat: no-repeat;
+        background-position:80% 8px ;
+        /*height: 2rem;*/
+    }
+    .UP__List:hover{
+        color:#000;
+        font-weight: 600;
+    }
+    /* End style a responsive son list*/
+    .Up_button{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 0fr 4fr;
+        margin: auto;
+        text-align: center;
+    }
+    .login{color: #000;margin-left: 90%;}
+    .BG-1{
+        background-color:#fe846d;
+        color: var(--neutral-white);
+        position: absolute;
+        top: 50px;
+        left:35%;
+    }
+    .BG-1:hover{background-color:#fe846d;}
+    /* style in intro */
+    .intro{
+        position: absolute;
+        left: 10%;
+    }
+    .intro h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+/* end style in navbarminue & header */
+
+
+/* start style the section-1 responsive */
+@media screen and (max-width:985px){
+    .section-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        height:95rem;
+    }
+    .img_bg{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: -45%;
+        left: 15%;
+    }
+    .img_bg img{
+        max-width: 600px;
+        height: auto;
+    }
+    .UP__article{
+        width: 100%;
+        text-align: center;
+        left:0px;
+        margin-bottom:-38%;
+    }
+    .UP__article p{max-width:543px; margin: auto;}
+    .article__Two{margin: 180px 0px;}
+}
+/* start style the section-1 responsive */
+
+/* style the section-2 responsive */
+@media screen and (max-width:870px){
+    #section-2{
+        background-position: center -21rem;
+        height: 154vh;
+    }
+    .img_bloger_one{margin:-15% -5%;}
+    
+    .img_bloger_one img{width:90%; height: auto;}
+    
+    .tittle__section-2{
+        width: 60%;
+        margin:500px -40%; 
+        text-align: center;
+        margin-top: 75%;
+    }
+    .tittle__section-2 h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+/* style the section-2 responsive */
+@media screen and (max-width:975px){
+    .section-3{
+        display: flex;
+        flex-direction:row-reverse;
+        position: relative;
+        text-align: center;
+        height: 290vh;
+    }
+    .article_laptop{margin:120px auto 220px; z-index: 911;}
+
+    .article_laptop p{line-height: 2rem;}
+
+    .up--article{
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 10%;
+    }
+    .img__section_3{
+        width:80%;
+        height:auto;
+        margin: -10% auto 0px;
+        display: block;
+        position: absolute;
+        left: 10%;
+        top: 5%;
+    }
+}
+/* style the Footer responsive part-one*/
+@media screen and (max-width:840px){
+    footer{
+        height: 170vh;
+        text-align: center;
+    }
+    .logo{margin-left: 52px;}
+    .UP__menuefooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:2fr 1fr;
+    }
+    .list_footer{margin-left: 105%;}
+}
+/* style the Footer responsive part-two */
+@media screen and (max-width:406px){
+    footer{
+        height: 190vh;
+        text-align: center;
+        overflow: hidden;
+    }
+    .logo{margin-left: 12px;}
+    .UP__menuefooter{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr;
+    }
+    .list_footer{margin-left: 105%;}
+}
