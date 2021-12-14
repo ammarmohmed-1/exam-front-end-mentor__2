@@ -335,13 +335,11 @@ footer{
         z-index: 999;
         position: relative;
         background-color: white;
-        border: 5px solid green;
         width:70%;
         border-radius: 5px;
         min-height: 25rem;
         max-height: 180vh;
         animation: ammar 0.2s;
-        
     }
     .navbar_none{display: none;}
     @keyframes ammar {
